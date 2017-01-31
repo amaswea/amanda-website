@@ -1,0 +1,13 @@
+.paper {
+	color: inherit;
+	cursor: pointer;
+	border-bottom: none;
+}
+
+.paper:visited {
+	text-decoration: underline;
+}
+
+.fa-file-text {
+	cursor: pointer; 
+}
