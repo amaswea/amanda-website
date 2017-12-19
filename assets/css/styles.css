@@ -8,18 +8,31 @@
 	text-decoration: underline;
 }
 
+.paper-conditional {
+	font-style: italic;
+}
+
+.paper-first-author, .paper-author {
+	font-weight: bold;
+}
+
+.project-rewire {
+	height: 100%; 
+	width: 100%; 
+}
+
+.project-cth {
+	width: 300px;
+}
+
 .fa-file-text {
 	cursor: pointer; 
 }
 
 .project-video, .project-image {
 	float:  left;
-	margin-right:  20px;
+	margin-right:  10px;
 	margin-top:  5px;
-}
-
-.project-image {
-	width:  300px;
 }
 
 #three {
@@ -29,4 +42,6 @@
 #three > .container {
 	padding-top:  4em;
 }
+
+
 
