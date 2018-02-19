@@ -16,13 +16,9 @@
 	font-weight: bold;
 }
 
-.project-rewire {
-	height: 100%; 
-	width: 100%; 
-}
-
 .project-cth {
 	width: 300px;
+	height: 100%;
 }
 
 .fa-file-text {
@@ -30,18 +26,25 @@
 }
 
 .project-video, .project-image {
-	float:  left;
 	margin-right:  10px;
 	margin-top:  5px;
+	flex: 1 0 auto;
+	margin-bottom: 30px; 
 }
 
-#three {
-	clear:  left;
+.project-content {
+	display: flex; 
+	flex-direction: column;
+}
+
+.project-text {
+	margin-bottom: 10px;
 }
 
 #three > .container {
 	padding-top:  4em;
 }
+
 
 
 
