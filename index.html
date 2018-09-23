@@ -75,8 +75,8 @@
 					<header class="major">
 						<h2>About</h2>
 					</header>
-					<p>I am a third year Ph.D. student in Computer Science at the University of Washington, advised by <a href="https://faculty.washington.edu/ajko/">Andy Ko</a> and <a href="https://homes.cs.washington.edu/~jfogarty/">James Fogarty</a>. I recently completed a second internship at Adobe Research Creative Technologies Lab working with Wilmot Li, Mira Dontcheva, Joel Brandt, and Morgan Dixon working on interactive tools to help UX designers reuse example screenshots. I also spent 3 years workin as a software engineer and SDET at Microsoft, where I worked on building a new cloud-based web client for Dynamics AX. 
-					<br /><br />I am interested in data-driven design, and ways that we can enhance, improve, and make interfaces more accessible without having access to the original application source code. Here is a link to my current <a href="assets/documents/AmandaSwearnginCV.pdf">CV</a>
+					<p>I am a fourth year Ph.D. student in Computer Science at the University of Washington, advised by <a href="https://faculty.washington.edu/ajko/">Andy Ko</a> and <a href="https://homes.cs.washington.edu/~jfogarty/">James Fogarty</a>. For Summer 2018, I was at Google for a research internship with  <a href="http://yangl.org/">Yang Li</a>.  In the past, I interned at Adobe Research Creative Technologies Lab working with Wilmot Li, Mira Dontcheva, Joel Brandt, and Morgan Dixon, on <b>Rewire</b>, an interactive design tool to help UX designers reuse example screenshots. I also spent 3 years working as a software engineer and SDET at Microsoft, where I worked on a web interface framework for Dynamics AX. 
+					<br /><br />I am interested in data-driven design, creating tools to help designers adapt examples and explore variations, and ways that we can enhance, improve, and make interfaces more accessible without having access to the original application source code. My projects have involved building interactive systems towards these interests that apply a variety of techniques including program analysis and synthesis, computer vision, machine learning, and pixel-based reverse engineering. Here is a link to my current <a href="assets/documents/AmandaSwearnginCV.pdf">CV</a>
 						<i class="fa fa-file-pdf-o">
 						</i>
 					</p>
@@ -91,24 +91,31 @@
 					</header>
 					<div class="project-container">
 						<div class="project-header">
-							<h3>Rewire: Interface Design Assistance from Examples</h3>
+							<h3><a href="#scout">Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints</a></h3>
+						</div>
+						<div class="project-content">
+							<p class="project-text">  
+							Although the exploration of variations is a key part of interface design, current processes for creating variations are mostly manual. Scout system that helps designers explore many variations rapidly through mixed-initiative interaction with high-level constraints and design feedback. Scout allows designers to specfiy high-level constraints based on design concepts (e.g. emphasis). We have formalized several of these high-level constraints into their corresponding low-level spatial constraints to enable rapidly generating many designs through constraint solving and program synthesis. 
+							</p>
+						</div>
+						<div class="project-header">
+							<h3><a href="#rewire">Rewire: Interface Design Assistance from Examples</a></h3>
 						</div>
 						<div class="project-content">
 							<p class="project-text">         
-								Interface designers often use screenshot images of example designs as building blocks for new designs. Since images are unstructured and hard to edit, designers typically reconstruct screenshots with vector graphics tools in order to reuse or edit parts of the design. Unfortunately, this reconstruction process is tedious and slow. Rewire is an interactive system that helps designers leverage example screenshots. Rewire automatically infers a vector representation of screenshots where each UI component is a separate object with editable shape and style properties. Rewire provides three design assistance modes that help designers reuse or redraw components of the
-								example design. 
+							Interface designers often use screenshot images of example designs as building blocks for new designs. Since images are unstructured and hard to edit, designers typically reconstruct screenshots with vector graphics tools in order to reuse or edit parts of the design. Unfortunately, this reconstruction process is tedious and slow. Rewire is an interactive system that helps designers leverage example screenshots. Rewire automatically infers a vector representation of screenshots where each UI component is a separate object with editable shape and style properties. Rewire provides three design assistance modes that help designers reuse or redraw components of the example design.
 							</p>
 							<div class="project-video" style="position:relative;width:360px;height:200px;"><iframe src="https://www.youtube.com/embed/ifiwpBe_jkA?ecver=2" width="360" height="200" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 						</div>
 					</div>                    
 					<div class="project-container">
 						<div class="project-header">
-							<h3>Genie: Input Retargeting on the Web through Command Reverse Engineering</h3>
+							<h3><a href="#genie">Genie: Input Retargeting on the Web through Command Reverse Engineering</a></h3>
 						</div>
 						<div class="project-content">
 							<p class="project-text">
-							I created an abstract model of a command and a set of methods for reverse engineerings commands and command metadata from arbitrary web applications for the purposes of command monitoring and retargeting inputs to alternate modalities (e.g., Retargeting a web application built only for mouse input to have audio-controlled commands). The system uses JavaScript static and dynamic program analysis to discover commands and monitor their status, and is built in a Chrome Extension. I am working on creating an open source version of the tool and will be making it available soon (TBA).
-						</p>
+								I created an abstract model of a command and a set of methods for reverse engineerings commands and command metadata from arbitrary web applications for the purposes of command monitoring and retargeting inputs to alternate modalities (e.g., Retargeting a web application built only for mouse input to have audio-controlled commands). The system uses JavaScript static and dynamic program analysis to discover commands and monitor their status, and is built in a Chrome Extension. I am working on creating an open source version of the tool and will be making it available soon (TBA).
+							</p>
 							<div class="project-video" style="position:relative;width:360px;height:270px;"><iframe src="https://www.youtube.com/embed/mQlr1kkitF8?ecver=2" width="360" height="270" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 						</div>
 					</div>
@@ -123,7 +130,7 @@
 					</header>  
 					<div class="project-container">
 						<div class="project-header">
-							<h3>CogTool-Helper: Generating Predictive Human Performance Models from Interfaces</h3>
+							<h3><a href="#cogtool-helper">CogTool-Helper: Generating Predictive Human Performance Models from Interfaces</a></h3>
 						</div>
 						<div class="project-content">
 							<p class="project-text">
@@ -145,12 +152,16 @@
 					</header>
 					<h3>Conference Publications</h3>
 					<ul class="feature-icons">
-						<li class="fa-file-text fa-clickable"><a class="paper" href="assets/documents/AmandaSwearngin_Rewire_CHI2018.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Mira Dontcheva, Wilmot Li, Joel Brandt, Morgan Dixon, Andrew J. Ko. Rewire: Interface Design Assistance from Examples. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI), 2018.</a></li>
-						<li class="fa-file-text fa-clickable"><a class="paper" href="assets/documents/AmandaSwearngin_CHI2017_camera_ready.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Andrew J. Ko, James Fogarty. Genie: Input Retargeting on the Web through Command Reverse Engineering. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI), 2017.</a> </li>
-						<li class="fa-file-text fa-clickable"><a class="paper" href="assets/documents/AmandaSwearngin_ICSE2013.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Myra B. Cohen, Bonnie E. John, Rachel K.E. Bellamy. Human Performance Regression Testing. International Conference on Software Engineering (ICSE), pages 152-161, 2013. (acceptance rate: 18.5%)</a></li>
+						<li class="fa-file-text fa-clickable"><a id="rewire" class="paper" href="assets/documents/AmandaSwearngin_Rewire_CHI2018.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Mira Dontcheva, Wilmot Li, Joel Brandt, Morgan Dixon, Andrew J. Ko. Rewire: Interface Design Assistance from Examples. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI), 2018.</a></li>
+						<li class="fa-file-text fa-clickable"><a id="genie" class="paper" href="assets/documents/AmandaSwearngin_CHI2017_camera_ready.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Andrew J. Ko, James Fogarty. Genie: Input Retargeting on the Web through Command Reverse Engineering. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI), 2017.</a> </li>
+						<li class="fa-file-text fa-clickable"><a id="cogtool-helper" class="paper" href="assets/documents/AmandaSwearngin_ICSE2013.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Myra B. Cohen, Bonnie E. John, Rachel K.E. Bellamy. Human Performance Regression Testing. International Conference on Software Engineering (ICSE), pages 152-161, 2013. (acceptance rate: 18.5%)</a></li>
 						<li class="fa-file-text fa-clickable"><a class="paper" href="assets/documents/AmandaSwearngin_CHI2012.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Myra B. Cohen, Bonnie E. John, Rachel K.E. Bellamy. Easing the Generation of Predictive Human Performance Models from Legacy Systems. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI), pages 2489-2498, 2012. (acceptance rate: 23%)</a></li>
 						<li class="fa-file-text fa-clickable"><a class="paper" href="assets/documents/Kuttal_ISEUD2011.pdf">Sandeep Kaur Kuttal, Anita Sarma, <span class="paper-author">Amanda Swearngin</span>, Gregg Rothermel. Versioning for Mashups — An Exploratory Study. International Symposium on End User Development (IS-EUD), pages 25-41, 2011. (acceptance rate: 27%)</a></li>
 						<li class="fa-file-text fa-clickable"><a class="paper" href="assets/documents/AmandaSwearngin_SARA2011.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Berthe Y. Choueiry, Eugene C. Freuder. A Reformulation Strategy for Multi-Dimensional CSPs: The Case Study of the SET Game. Symposium on Abstraction, Reformulation, and Approximation (SARA), pages 107-116, 2011. </a></li>
+					</ul>
+					<h3>Demos & Extended Abstracts</h3>
+					<ul class="feature-icons"> 
+						<li class="fa-file-text fa-clickable"><a id="scout" class="paper" href="assets/documents/Swearngin_UIST18_Demo_Scout.pdf"><span class="paper-first-author">Amanda Swearngin</span>, Andrew J. Ko, James Fogarty. Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints. ACM User Interface Software and Technology Symposium (UIST) '18, Demos.</a></li>		
 					</ul>
 					<h3>Patents</h3>
 					<ul class="feature-icons">
